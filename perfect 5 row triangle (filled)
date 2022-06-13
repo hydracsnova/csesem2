@@ -1,0 +1,37 @@
+#include <stdio.h>
+//program to print a pattern of a triangle
+int main()
+{
+    printf("\n");
+    printf("---------------------------------------------\n");
+    printf("here is your pattern of a triangle\n");
+    //rows loop
+    int c=0;
+    for (int i=1;i<=5;i++){
+        //loop for blank spaces (keep another symbol and check)
+        for(int j=5;j>=i;j--){
+            printf(" ");
+            }
+        //loop for printing the stars(keep another symbol and check)
+        for(int k=1;k<=i;k++){
+            printf("*");
+            c++;
+						//condition to indent the rows to form a centre spine for triangle(keep another symbol and check)
+            if(k>=2){
+                printf("*");
+                }
+            }    
+        printf("\n");
+        }
+    printf("\n");
+    }
+    
+    OUTPUT:
+    ---------------------------------------------
+    here is your pattern of a triangle
+     *
+    ***
+   *****
+  *******
+ *********
+
